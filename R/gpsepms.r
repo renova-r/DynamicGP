@@ -31,8 +31,10 @@ gpsepms <- function(resp,design, d=NULL,g=0.001,nstarts=5)
     class(ret) <- "gpsepms"
     return(ret)
 }
-predict.gpsepms <- function(obj,test)
+predict.gpsepms <- function(object, ...)
 {
+    obj <- object
+    test <- list(...)[[1]]
     optgpi <- obj$gpis[obj$optidx]
     pred <- predGPsep(optgpi,test)
     return(pred)
@@ -81,8 +83,10 @@ gpseplmms <- function(resp,design,type=c("cmean","lmean"),
     class(ret) <- "gpseplmms"
     return(ret)
 }
-predict.gpseplmms <- function(obj,test)
+predict.gpseplmms <- function(object, ...)
 {
+    obj <- object
+    test <- list(...)[[1]]
     optgpi <- obj$gpis[obj$optidx]
     pred <- predGPsepLm(optgpi,test,obj$type)
     return(pred)

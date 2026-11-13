@@ -1,14 +1,14 @@
 Package: DynamicGP
 Title: Modelling and Analysis of Dynamic Computer Experiments
-Version: 1.1-9
+Version: 1.1.9.9001
 Description: Emulating and solving inverse problems for dynamic computer experiments.
 	     It contains two major functionalities: (1) localized GP model for large-scale
 	     dynamic computer experiments using the algorithm proposed by
-	     Zhang et al. (2018) <arXiv:1611.09488>; (2) solving inverse problems
+	     Zhang et al. (2018) <doi:10.48550/arXiv.1611.09488>; (2) solving inverse problems
 	     in dynamic computer experiments. The current version only supports 64-bit
 	     version of R.
+    Compatibility updates by Renova.
 License: GPL (>= 2)
-Date: 2022-11-07
 Authors@R: c(person(given="Ru", family="Zhang", role = c("aut", "cre"), email="heavenmarshal@gmail.com"),
 	     person(given=c("Chunfang","Devon"), family="Lin", role= "aut"),
 	     person(given="Pritam", family="Ranjan", role= "aut"),
